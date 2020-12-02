@@ -31,7 +31,7 @@
 }
 .header__searchIcon {
     padding: 5px;
-    height: 2px !important;
+    /* height: 20px !important; */
     background-color: #cd9048;
 }
 
