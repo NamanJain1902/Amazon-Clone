@@ -3,19 +3,19 @@ import './App.css';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Header from './Header';  // imported hook->header
 import Home from "./Home";
+import Checkout from "./Checkout";
 
 function App() {
   return (
     // BEM convention(naming convention to use for styling)
     <Router>
       <div className="app">
+      <Header />
         <Switch>
           <Route path="/checkout">
-            <Header />
-            <h1>I'm Checkout Smash bang.!!!</h1>
+            <Checkout />
           </Route>
           <Route path="/">
-            <Header />
             <Home />
           </Route>
         </Switch>
